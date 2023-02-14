@@ -1,0 +1,260 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.card {
+    width: 100%;
+    max-width: 200px;
+    border-radius: 5px;
+    margin: 20px;
+    overflow: hidden;
+    background-color: aliceblue;
+    box-shadow: 0px 1px 10px rgba (0, 0, 0, 0.2);
+    text-align: center;
+    transition: all 350ms ease;
+}
+.price {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 10px;
+}
+
+.price>a {
+    background-color: rgb(255, 255, 255);
+    border: 1px solid gray;
+    text-decoration: none;
+    color: black;
+    
+    box-shadow: 0px 0px 10px; rgba(0,0,0,0.2);
+}
+
+
+figure img {
+    height: 100%;
+    max-height: 300px;
+}
+
+.card:hover {
+    box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.3);
+}
+
+.barra,
+nav {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+}
+
+
+.logo>img {
+    width: 150px;
+    margin-left: 30px;
+}
+
+.checkbox {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 1200px;
+    justify-content: space-evenly;
+    margin-top: 20px;
+}
+
+nav {
+    justify-content: space-between;
+    background-color: beige;
+    height: 100px;
+}
+
+.barra {
+    background-color: rgb(233, 233, 233);
+    height: 100px;
+    justify-content: space-between;
+}
+
+.barra a {
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.barra img {
+    width: 50px;
+}
+
+.links {
+    margin-right: 30px;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.links a {
+    border: 2px solid black;
+    text-decoration: none;
+    margin: 10px;
+    padding: 5px;
+    background-color: rgb(252, 252, 252);
+    font-size: 15px;
+    border-radius: 3px;
+    color: rgb(0, 0, 0);
+}
+
+.lookfor,
+form {
+
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.lookfor img {
+    width: 30px;
+    margin-left: 10px;
+}
+
+.categorycheckbox span {
+    margin: 10px
+}
+
+
+footer {
+    background-color: rgb(233, 233, 233);
+}
+
+
+footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.redes {
+    margin-left: 40px;
+}
+
+.redes img {
+    margin: 10px;
+}
+
+.cohort {
+    margin-right: 40px;
+
+}
+
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    justify-content: center;
+
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 400px;
+    justify-content: center;
+    
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    max-height: 600px;
+}
+
+.sub {
+    display: flex;
+    justify-content: end;
+    margin: 10px;
+}
+
+tr, td, th {
+    text-align: start;
+    border: 1px solid black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   
+}
+
+
+th {
+    background-color: rgb(180, 180, 180);
+}
+td{
+    font-size: 15px;
+}
+
+table {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    max-width: 900px;
+}
+
+.containerdetails {
+    display: flex;
+    flex-direction: row;
+    
+  
+}
+
+.containerdetails, .details, .description {
+    border: 1px solid black;
+    margin: 20px;
+}
+
+.description> h3, p {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 20px;
+    text-align: center;
+
+}
+
+.details {
+    display: flex;
+    align-items: center;
+    box-shadow: 10px 2px 25px rgb(114, 114, 114); 
+}
+
+@media only screen and (min-width:320px) and (max-width:767px) {
+
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+      
+    }
+    .links a {
+        margin: 1px;
+    }
+
+    .container {
+        display:  flex;
+        justify-content: center;
+    }
+    
+.containerdetails {
+    display: flex;
+    flex-direction: column;
+    
+  
+}
+}
