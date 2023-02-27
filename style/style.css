@@ -2,26 +2,31 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Catamaran', sans-serif;
 }
 
-.container {
+#container {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     width: 100%;
     max-width: 1200px;
+    justify-content: center;
 }
 
 .card {
+
     width: 100%;
-    max-width: 200px;
-    border-radius: 5px;
-    margin: 20px;
+    max-width: 300px;
+    border-radius: 10px;
+    margin: 10px;
     overflow: hidden;
     background-color: aliceblue;
     box-shadow: 0px 1px 10px rgba (0, 0, 0, 0.2);
     text-align: center;
     transition: all 350ms ease;
 }
+
 .price {
     display: flex;
     flex-direction: row;
@@ -30,18 +35,23 @@
 }
 
 .price>a {
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(255, 228, 139);
     border: 1px solid gray;
+    border-radius: 3px;
     text-decoration: none;
     color: black;
-    
-    box-shadow: 0px 0px 10px; rgba(0,0,0,0.2);
+    width: 100%;
+    max-width: 100px;
 }
 
 
-figure img {
-    height: 100%;
-    max-height: 300px;
+.card img {
+    width: 400px;
+}
+
+.card {
+    width: 100%;
+    max-width: 350px;
 }
 
 .card:hover {
@@ -64,12 +74,44 @@ nav {
 
 .checkbox {
     display: flex;
+    flex-direction: ;
     flex-wrap: wrap;
     width: 100%;
     max-width: 1200px;
     justify-content: space-evenly;
     margin-top: 20px;
 }
+
+.categorycheckbox span {
+    margin: 10px,
+}
+
+.categorycheckbox {
+    display: flex;
+    width: 100%;
+    max-width: 500px;
+}
+
+.lookfor,
+form {
+
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.lookfor img {
+    width: 30px;
+    margin-left: 10px;
+}
+
+.lookfor {
+    display: flex;
+    width: 100%;
+    max-width: 500px;
+}
+
+
+
 
 nav {
     justify-content: space-between;
@@ -100,44 +142,35 @@ nav {
 }
 
 .links a {
-    border: 2px solid black;
+    border: 1px solid black;
     text-decoration: none;
     margin: 10px;
     padding: 5px;
     background-color: rgb(252, 252, 252);
     font-size: 15px;
     border-radius: 3px;
-    color: rgb(0, 0, 0);
-}
-
-.lookfor,
-form {
-
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.lookfor img {
-    width: 30px;
-    margin-left: 10px;
-}
-
-.categorycheckbox span {
-    margin: 10px
+    color: rgb(231, 17, 17);
 }
 
 
-footer {
-    background-color: rgb(233, 233, 233);
-}
-
-
-footer {
-    display: flex;
+.aaa {
+display: flex;
+    flex-direction: row;
     justify-content: space-between;
 }
 
+footer {
+    
+    
+    background-color: rgb(233, 233, 233);
+    margin-bottom: 0;
+
+}
+
+
+
 .redes {
+
     margin-left: 40px;
 }
 
@@ -151,11 +184,13 @@ footer {
 }
 
 
+
 .contact {
     display: flex;
     flex-direction: column;
     max-width: 400px;
     justify-content: center;
+
 
 }
 
@@ -170,36 +205,42 @@ form {
     display: flex;
     flex-direction: column;
     width: 100%;
-    max-width: 400px;
     justify-content: center;
-    
+
 }
 
 main {
     display: flex;
     justify-content: center;
     height: 100%;
-    max-height: 600px;
+    min-height: 600px;
+    width: 100%;
+    max-width: 1200px;
+
 }
 
 .sub {
     display: flex;
     justify-content: end;
     margin: 10px;
+
 }
 
-tr, td, th {
+tr,
+td,
+th {
     text-align: start;
     border: 1px solid black;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-   
+
 }
 
 
 th {
     background-color: rgb(180, 180, 180);
 }
-td{
+
+td {
     font-size: 15px;
 }
 
@@ -213,16 +254,19 @@ table {
 .containerdetails {
     display: flex;
     flex-direction: row;
-    
-  
+
+
 }
 
-.containerdetails, .details, .description {
+.containerdetails,
+.details,
+.description {
     border: 1px solid black;
     margin: 20px;
 }
 
-.description> h3, p {
+.description>h3,
+p {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     margin: 20px;
     text-align: center;
@@ -232,7 +276,7 @@ table {
 .details {
     display: flex;
     align-items: center;
-    box-shadow: 10px 2px 25px rgb(114, 114, 114); 
+    box-shadow: 10px 2px 25px rgb(114, 114, 114);
 }
 
 @media only screen and (min-width:320px) and (max-width:767px) {
@@ -240,21 +284,22 @@ table {
     nav {
         display: flex;
         flex-wrap: wrap;
-      
+
     }
+
     .links a {
         margin: 1px;
     }
 
     .container {
-        display:  flex;
+        display: flex;
         justify-content: center;
     }
-    
-.containerdetails {
-    display: flex;
-    flex-direction: column;
-    
-  
-}
+
+    .containerdetails {
+        display: flex;
+        flex-direction: column;
+
+
+    }
 }
