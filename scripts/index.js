@@ -19,7 +19,7 @@ allevents.forEach(publish => {
      
       <div class="price"> 
       <h4> price $ ${publish.price} </h4>
-      <a href="#">Ver más</a>
+      <a  href="../Details.html?id= ${publish._id}" class="card">Ver más</a>
                 </div> 
                 </div>
     

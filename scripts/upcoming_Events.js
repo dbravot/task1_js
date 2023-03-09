@@ -3,23 +3,23 @@ import { data } from './data.js'
 
 
 
-
-
-/* const fecha = new Date(data.currentDate) ;
-
-for (let i=0; i <= data.events.length; i++ ) {
-  if (data.events[i].date <= fecha.toLocaleDateString) {
-    return 
-
-
-
-}; */
-
 let allevents = (data.events);
 
 let container = "";
 
-allevents.forEach(publish => {
+let fecha = new Date ()
+
+let upcomingEv = allevents.filter (all => {
+  let eventoPasado = new Date (all.date);
+  return fecha < eventoPasado
+  
+  
+ });
+
+  
+
+
+upcomingEv.forEach(publish => {
   container += `<div class="card">
     <figure>
       <img src= ${publish.image} alt=${publish.name}>
@@ -30,11 +30,13 @@ allevents.forEach(publish => {
      
       <div class="price"> 
       <h4> price $ ${publish.price} </h4>
-      <a href="#">Ver más</a>
+      <a  href="../Details.html?id= ${publish._id}" class="card">Ver más</a>
                 </div> 
                 </div>
     
   </div>`;
-})
+});
+
+
 
 contenidocentral.innerHTML = container;

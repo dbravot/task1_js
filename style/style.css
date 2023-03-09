@@ -88,27 +88,30 @@ nav {
 
 .categorycheckbox {
     display: flex;
-    width: 100%;
-    max-width: 500px;
+   justify-content: center;
+   
 }
+label {
+    margin-left: 15px;
+}
+
+
 
 .lookfor,
 form {
 
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
+    width: 100%;
+    max-width: 400px;
 }
 
 .lookfor img {
-    width: 30px;
+    width: 20px;
     margin-left: 10px;
 }
 
-.lookfor {
-    display: flex;
-    width: 100%;
-    max-width: 500px;
-}
 
 
 
@@ -142,26 +145,27 @@ nav {
 }
 
 .links a {
-    border: 1px solid black;
+    border-left: 1px solid rgb(121, 51, 29);
     text-decoration: none;
-    margin: 10px;
+    border-radius: 10px;
+   /*  margin: 10px; */
     padding: 5px;
-    background-color: rgb(252, 252, 252);
-    font-size: 15px;
+    background-color: rgb(248, 248, 248);
+    font-size: 18px;
     border-radius: 3px;
     color: rgb(231, 17, 17);
 }
 
 
 .aaa {
-display: flex;
+    display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 
 footer {
-    
-    
+
+
     background-color: rgb(233, 233, 233);
     margin-bottom: 0;
 
@@ -258,6 +262,11 @@ table {
 
 }
 
+figure {
+    display: flex;
+    justify-content: center;
+}
+
 .containerdetails,
 .details,
 .description {
@@ -279,16 +288,40 @@ p {
     box-shadow: 10px 2px 25px rgb(114, 114, 114);
 }
 
+.cardDetails img {
+    width: 100%;
+    max-width: 700px;
+    border-radius: 10px;
+    box-shadow: 10px 2px 25px rgb(114, 114, 114);
+}
+}
+
+
+
+.cardDetails h4 {
+    font-size: 20px;
+    color: brown;
+}
+
+.cardDetails p {
+    font-size: 20px;
+    font-style: oblique;
+}
+
 @media only screen and (min-width:320px) and (max-width:767px) {
 
     nav {
         display: flex;
         flex-wrap: wrap;
+        justify-content: center;
 
     }
+   
 
     .links a {
-        margin: 1px;
+        margin: 0.5px;
+        font-size: 14px;
+       
     }
 
     .container {
@@ -302,4 +335,36 @@ p {
 
 
     }
+
+    .cardDetails img {
+        width: 100%;
+        max-width: 310px;
+        display: flex;
+        justify-content: center;
+        border-radius: 10px;
+        box-shadow: 10px 2px 25px rgb(114, 114, 114);
+    }
+    
+    
+    
+    
+    .cardDetails h4 {
+        font-size: 15px;
+        color: brown;
+    }
+    
+    .cardDetails p {
+        font-size: 15px;
+        font-style: oblique;
+    }
+    .cardDetails {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        max-width: 310px;
+        flex-wrap: wrap;
+    }
+
+    
 }
+

@@ -1,8 +1,5 @@
-
-
 const contenidocentral = document.getElementById('container')
 import { data } from './data.js'
-
 
 
 
@@ -10,7 +7,19 @@ let allevents = (data.events);
 
 let container = "";
 
-allevents.forEach(publish => {
+let fecha = new Date ()
+
+let pasado = allevents.filter (all => {
+  let eventoPasado = new Date (all.date);
+  return fecha > eventoPasado
+  
+  
+ });
+
+  
+
+
+pasado.forEach(publish => {
   container += `<div class="card">
     <figure>
       <img src= ${publish.image} alt=${publish.name}>
@@ -21,11 +30,13 @@ allevents.forEach(publish => {
      
       <div class="price"> 
       <h4> price $ ${publish.price} </h4>
-      <a href="#">Ver más</a>
+      <a  href="../Details.html?id= ${publish._id}" class="card">Ver más</a>
                 </div> 
                 </div>
     
   </div>`;
-})
+});
+
+
 
 contenidocentral.innerHTML = container;
